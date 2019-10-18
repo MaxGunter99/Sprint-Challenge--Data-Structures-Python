@@ -13,12 +13,8 @@ f.close()
 duplicates = []
 
 # # Works well!
-one = set( names_1 )
-
-dupes = one.intersection( names_2 )
-print( '\n\n' , list(dupes) , '\n\n' )
+dupes = set(names_1).intersection( names_2 )
 duplicates.append( list(dupes) )
-
 duplicates = duplicates[0]
 
 # 0.00590205192565918 seconds
